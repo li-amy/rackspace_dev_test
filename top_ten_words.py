@@ -4,6 +4,8 @@ import sys
 def top_ten_words(word_list):
     """Returns the top 10 words and their counts."""
     word_dict = {}
+    # Words are matched in case-insensitive manner.
+    word_list = map(lambda w: w.lower(), word_list)
     for word in word_list:
         # Add the word and its count into the dictionary if it's unique.
         if word not in word_dict.keys():
