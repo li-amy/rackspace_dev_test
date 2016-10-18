@@ -18,16 +18,17 @@ def test_answer():
     # Testing a list containing two tokens of the same count.
     assert top_ten_words(['aa', 'ab']) == [('aa', 1), ('ab', 1)]
     # Testing a list containing 10 unique tokens
+    # Testing a list containing 10 unique tokens
     assert top_ten_words(['a', 'a', 'a' , 'a', 'a', 
         'A', 'A', 'A', 'A', 'A', 'aa', 'aa', 'aa', 'aa', 
         'b', 'b', 'b', 'b', 'c', 'c', 'c', 'c',
         '0', '0', '0', 'B', 'B', 'B', '9', '9', '9',
-        'zZ9', '99'] == [('a', 5), ('A', 5), ('aa', 4), ('b', 4), ('c', 4), 
-        ('0', 3), ('B', 3), ('9', 3), ('zZ9', 1), ('99', 1)])
+        'zZ9', '99', '1', '2'] == [('a', 10), ('aa', 4), ('b', 7), ('c', 4), 
+        ('0', 3), ('9', 3), ('zZ9', 1), ('99', 1), ('1', 1), ('2', 1)])
     # Testing a list containing more than 10 unique tokens
     assert top_ten_words(['a', 'a', 'a' , 'a', 'a', 
         'A', 'A', 'A', 'A', 'A', 'aa', 'aa', 'aa', 'aa', 
         'b', 'b', 'b', 'b', 'c', 'c', 'c', 'c',
         '0', '0', '0', 'B', 'B', 'B', '9', '9', '9',
-        'zZ9', '99', 'd0f8'] == [('a', 5), ('A', 5), ('aa', 4), ('b', 4), ('c', 4), 
-        ('0', 3), ('B', 3), ('9', 3), ('zZ9', 1), ('99', 1)])
+        'zZ9', '99', '1', '2', '3'] == [('a', 10), ('aa', 4), ('b', 7), ('c', 4), 
+        ('0', 3), ('9', 3), ('zZ9', 1), ('99', 1), ('1', 1), ('2', 1)])
