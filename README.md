@@ -11,10 +11,12 @@ So far, the logic for tokenizing blobs of text and returning the 10 most common 
 Unix:
 Update the latest version of Python as instructed here: https://docs.python.org/3/using/unix.html. 
 Next, clone or download this repository.
+Finally, the individual modules can be executed through the command-line interface of the terminal following the code examples.
 
 Windows:
 Install and update the latest version of Python as instructed here: https://www.python.org/downloads/.
 Next, download this repository.
+Finally, the individual modules can be executed through the terminal, Command Prompt, following the code examples.
 
 # Tests
 Install pytest.
